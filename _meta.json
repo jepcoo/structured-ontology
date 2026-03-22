@@ -1,0 +1,21 @@
+{
+  "name": "structured-ontology",
+  "version": "1.0.0",
+  "description": "SQLite-based knowledge base with full-text search, graph queries, failure tracking, and namespaces",
+  "author": "workspace-coordinator",
+  "created": "2026-03-22",
+  "license": "MIT",
+  "tags": ["knowledge-base", "ontology", "graph", "search", "sqlite", "agent-team"],
+  "entry": "skill.py:StructuredOntologySkill",
+  "config": {
+    "db_path": "~/.openclaw/workspace/knowledge.db",
+    "default_namespace": "public"
+  },
+  "files": {
+    "main": "skill.py",
+    "database": "db.py",
+    "schema": "schema.sql",
+    "config": "skill.yaml",
+    "tests": "tests/test_skill.py"
+  }
+}
